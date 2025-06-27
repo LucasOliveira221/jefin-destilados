@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Combos de Whisky | Jefin Destilados</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script defer src="../../js/script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER COM MENU COMPLETO -->
+  <header class="header">
+    <div class="header-container">
+      <a href="../../index.html">
+        <img src="../../images/logo/logo-jefin.png" alt="Jefin Destilados" class="logo-img">
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="../../index.html">Início</a></li>
+          <li class="dropdown">
+            <a href="#">Categorias</a>
+            <ul class="dropdown-menu">
+              <li><a href="combos-de-whisky.html">Combo de Whisky</a></li>
+              <li><a href="combo-whisky-menor.html">Combo Whisky Menor</a></li>
+              <li><a href="combos-de-gin.html">Combo de Gin</a></li>
+              <li><a href="garrafas.html">Garrafas</a></li>
+              <li><a href="cervejas.html">Cervejas</a></li>
+              <li><a href="refrigerantes.html">Refrigerantes</a></li>
+              <li><a href="diversos.html">Diversos</a></li>
+            </ul>
+          </li>
+          <li><a href="../ofertas.html">Ofertas</a></li>
+          <li><a href="../eventos.html">Eventos</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="search-cart">
+        <input type="text" id="search" placeholder="Buscar...">
+        <a href="../carrinho.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+      </div>
+      <button class="btn-menu" onclick="toggleMenu()" aria-label="Abrir menu mobile">☰</button>
+    </div>
+    <div class="menu-mobile" id="mobileMenu">
+      <a href="../../index.html">Início</a>
+      <a href="combos-de-whisky.html">Combo de Whisky</a>
+      <a href="combo-whisky-menor.html">Combo Whisky Menor</a>
+      <a href="combos-de-gin.html">Combo de Gin</a>
+      <a href="garrafas.html">Garrafas</a>
+      <a href="cervejas.html">Cervejas</a>
+      <a href="refrigerantes.html">Refrigerantes</a>
+      <a href="diversos.html">Diversos</a>
+      <a href="../ofertas.html">Ofertas</a>
+      <a href="../eventos.html">Eventos</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+  </header>
+
+  <!-- TÍTULO PREMIUM DA CATEGORIA -->
+  <section style="background: linear-gradient(to right, #111, #000); padding: 60px 20px 30px;">
+    <h1 class="titulo-pagina" style="font-size: 36px; text-transform: uppercase; border-bottom: 3px solid #ecc440; padding-bottom: 10px; max-width: 1000px; margin: 0 auto; color: #ecc440;">
+      Combos de Whisky
+    </h1>
+  </section>
+
+  <!-- DESCRIÇÃO CURTA SOBRE OS COMBOS -->
+  <section style="background-color: #fff8e1; padding: 30px 20px; text-align: center;">
+    <p style="max-width: 900px; margin: 0 auto; font-size: 18px; color: #444;">
+      Nossos <strong>combos de whisky</strong> incluem uma garrafa de 1L, 8 gelinhos refrescantes, energético de 2L e 2 copos exclusivos. 
+      Tudo para transformar sua festa ou encontro com os amigos em um momento inesquecível.
+    </p>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="produtos">
+    <div class="grid-produtos" id="product-list"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="../politica.html">Política de Privacidade</a>
+      <a href="../termos.html">Termos de Uso</a>
+      <a href="../sobre.html">Sobre a Loja</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+    <p>Site criado por Lucas de Oliveira - WhatsApp: (31) 98467-7689</p>
+    <p>&copy; 2025 Jefin Destilados - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>

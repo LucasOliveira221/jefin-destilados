@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Jefin Destilados</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+  <style>
+    .contato-premium {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      padding: 40px 20px;
+      max-width: 720px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contato-premium h2 {
+      font-size: 26px;
+      color: #4A1C1C;
+      margin-bottom: 20px;
+    }
+
+    .contato-premium p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn-contato {
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      margin: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe5b;
+    }
+
+    .btn-instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: white;
+    }
+
+    .btn-instagram:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      .btn-contato {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-container">
+    <a href="../index.html">
+      <img src="../images/logo/logo-jefin.png" alt="Jefin Destilados" class="logo-img">
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Categorias</a>
+          <ul class="dropdown-menu">
+            <li><a href="categorias/combos-de-whisky.html">Combo de Whisky</a></li>
+            <li><a href="categorias/combo-whisky-menor.html">Combo Whisky Menor</a></li>
+            <li><a href="categorias/combos-de-gin.html">Combo de Gin</a></li>
+            <li><a href="categorias/garrafas.html">Garrafas</a></li>
+            <li><a href="categorias/cervejas.html">Cervejas</a></li>
+            <li><a href="categorias/refrigerantes.html">Refrigerantes</a></li>
+            <li><a href="categorias/diversos.html">Diversos</a></li>
+          </ul>
+        </li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" id="search" placeholder="Buscar...">
+      <a href="carrinho.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+    </div>
+    <button class="btn-menu" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="menu-mobile" id="mobileMenu">
+    <a href="../index.html">Início</a>
+    <a href="categorias/combos-de-whisky.html">Combo de Whisky</a>
+    <a href="categorias/combo-whisky-menor.html">Combo Whisky Menor</a>
+    <a href="categorias/combos-de-gin.html">Combo de Gin</a>
+    <a href="categorias/garrafas.html">Garrafas</a>
+    <a href="categorias/cervejas.html">Cervejas</a>
+    <a href="categorias/refrigerantes.html">Refrigerantes</a>
+    <a href="categorias/diversos.html">Diversos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</header>
+
+<!-- CONTEÚDO PREMIUM -->
+<main class="py-16 px-4 md:px-10 lg:px-24 bg-[#f9f9f9]">
+  <h1 class="titulo-pagina">Fale com a Jefin Destilados</h1>
+
+  <div class="contato-premium">
+    <h2>Atendimento rápido e direto</h2>
+    <p>
+      Precisa de um orçamento, quer tirar dúvidas ou fazer seu pedido? <br />
+      Entre em contato diretamente com a Jefin Destilados pelo WhatsApp ou siga nosso Instagram e fique por dentro das ofertas e novidades.
+    </p>
+
+    <a href="https://wa.me/5531988515508?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" class="btn-contato btn-whatsapp">
+      📲 Falar com Jefin Destilados no WhatsApp
+    </a>
+
+    <a href="https://www.instagram.com/jefin_destilados/" target="_blank" class="btn-contato btn-instagram">
+      📸 Ver perfil no Instagram
+    </a>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="sobre.html">Sobre a Loja</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <p>Site criado por Lucas de Oliveira - WhatsApp: (31) 98467-7689</p>
+  <p>&copy; 2025 Jefin Destilados - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

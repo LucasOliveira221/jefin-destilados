@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofertas | Jefin Destilados</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+  <style>
+    .ofertas-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .grade-ofertas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card-oferta {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.06);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-oferta:hover {
+      transform: scale(1.03);
+    }
+
+    .card-oferta img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .card-oferta h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #4A1C1C;
+    }
+
+    .descricao-oferta {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .precos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .preco-antigo {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 15px;
+    }
+
+    .preco-novo {
+      color: #D32F2F;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .btn-comprar {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 20px;
+      background-color: #ECC440;
+      color: #000;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-comprar:hover {
+      background-color: #d4ad2c;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-container">
+    <a href="../index.html">
+      <img src="../images/logo/logo-jefin.png" alt="Jefin Destilados" class="logo-img">
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Categorias</a>
+          <ul class="dropdown-menu">
+            <li><a href="categorias/combos-de-whisky.html">Combo de Whisky</a></li>
+            <li><a href="categorias/combo-whisky-menor.html">Combo Whisky Menor</a></li>
+            <li><a href="categorias/combos-de-gin.html">Combo de Gin</a></li>
+            <li><a href="categorias/garrafas.html">Garrafas</a></li>
+            <li><a href="categorias/cervejas.html">Cervejas</a></li>
+            <li><a href="categorias/refrigerantes.html">Refrigerantes</a></li>
+            <li><a href="categorias/diversos.html">Diversos</a></li>
+          </ul>
+        </li>
+        <li><a href="ofertas.html" class="active">Ofertas</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" id="search" placeholder="Buscar...">
+      <a href="carrinho.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+    </div>
+    <button class="btn-menu" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="menu-mobile" id="mobileMenu">
+    <a href="../index.html">Início</a>
+    <a href="categorias/combos-de-whisky.html">Combo de Whisky</a>
+    <a href="categorias/combo-whisky-menor.html">Combo Whisky Menor</a>
+    <a href="categorias/combos-de-gin.html">Combo de Gin</a>
+    <a href="categorias/garrafas.html">Garrafas</a>
+    <a href="categorias/cervejas.html">Cervejas</a>
+    <a href="categorias/refrigerantes.html">Refrigerantes</a>
+    <a href="categorias/diversos.html">Diversos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</header>
+
+<!-- CONTEÚDO OFERTAS -->
+<main class="bg-[#f9f9f9] py-16 px-4 md:px-10 lg:px-24">
+  <h1 class="titulo-pagina">🔥 Ofertas Especiais</h1>
+
+  <div class="ofertas-container">
+    <div class="grade-ofertas">
+
+      <!-- PRODUTO 1 -->
+      <div class="card-oferta">
+        <img src="../images/produtos/combos-de-whisky/JACK MACA VERDE/JackDaniels_MacaVerde_Combo_4.png" alt="Combo Jack Daniel's Maçã Verde">
+        <h3>Combo Jack Daniel's Maçã Verde</h3>
+        <p class="descricao-oferta">
+          Garrafa 1L • 8 Gelinhos • Energético 2L • 2 Copos personalizados
+        </p>
+        <div class="precos">
+          <span class="preco-antigo">R$ 169,90</span>
+          <span class="preco-novo">R$ 139,90</span>
+        </div>
+        <a href="https://wa.me/5531988515508?text=Olá!%20Gostaria%20de%20comprar%20o%20Combo%20Jack%20Daniel's%20Maçã%20Verde." target="_blank" class="btn-comprar">🛒 Comprar agora</a>
+      </div>
+
+      <!-- PRODUTO 2 -->
+      <div class="card-oferta">
+        <img src="../images/produtos/combo-whisky-menor/black-jocker-menor-4gelin/BlackJoker_ComboMenor_4.png" alt="Combo Whisky Black Joker">
+        <h3>Combo Whisky Black Joker (Econômico)</h3>
+        <p class="descricao-oferta">
+          Garrafa 1L • 4 Gelinhos • Energético 2L • 1 Copo personalizado
+        </p>
+        <div class="precos">
+          <span class="preco-antigo">R$ 82,50</span>
+          <span class="preco-novo">R$ 49,99</span>
+        </div>
+        <a href="https://wa.me/5531988515508?text=Olá!%20Gostaria%20de%20comprar%20a%20Cerveja%20Heineken%20350ml." target="_blank" class="btn-comprar">🛒 Comprar agora</a>
+      </div>
+
+      <!-- PRODUTO 3 -->
+     <div class="card-oferta">
+        <img src="../images/produtos/cervejas/Brahma_CaixaLitrin_24Unidades.png" alt="Caixa Brahma Litrinho">
+        <h3>Caixa Brahma Litrinho</h3>
+        <p class="descricao-oferta">
+        Caixa com 24 unidades • 300ml 
+      </p>
+     <div class="precos">
+       <span class="preco-antigo">R$ 98,80</span>
+       <span class="preco-novo">R$ 69,90</span>
+    </div>
+     <a href="https://wa.me/5531988515508?text=Olá!%20Tenho%20interesse%20na%20Caixa%20Brahma%20Litrinho%20com%2024%20unidades." target="_blank" class="btn-comprar">🛒 Comprar agora</a>
+   </div>
+
+
+      <!-- Adicione mais produtos seguindo o mesmo padrão -->
+
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="sobre.html">Sobre a Loja</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <p>Site criado por Lucas de Oliveira - WhatsApp: (31) 98467-7689</p>
+  <p>&copy; 2025 Jefin Destilados - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

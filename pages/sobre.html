@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre a Loja | Jefin Destilados</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+  <style>
+    .bloco-sobre {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin: 60px auto;
+      max-width: 1000px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    .bloco-sobre img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .bloco-texto {
+      flex: 1;
+    }
+
+    .bloco-texto h2 {
+      font-size: 24px;
+      color: #4A1C1C;
+      margin-bottom: 15px;
+    }
+
+    .bloco-texto p {
+      font-size: 17px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .invertido {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 768px) {
+      .bloco-sobre {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .invertido {
+        flex-direction: column;
+      }
+
+      .bloco-sobre img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-container">
+    <a href="../index.html">
+      <img src="../images/logo/logo-jefin.png" alt="Jefin Destilados" class="logo-img">
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Categorias</a>
+          <ul class="dropdown-menu">
+            <li><a href="categorias/combos-de-whisky.html">Combo de Whisky</a></li>
+            <li><a href="categorias/combo-whisky-menor.html">Combo Whisky Menor</a></li>
+            <li><a href="categorias/combos-de-gin.html">Combo de Gin</a></li>
+            <li><a href="categorias/garrafas.html">Garrafas</a></li>
+            <li><a href="categorias/cervejas.html">Cervejas</a></li>
+            <li><a href="categorias/refrigerantes.html">Refrigerantes</a></li>
+            <li><a href="categorias/diversos.html">Diversos</a></li>
+          </ul>
+        </li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" id="search" placeholder="Buscar...">
+      <a href="carrinho.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+    </div>
+    <button class="btn-menu" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="menu-mobile" id="mobileMenu">
+    <a href="../index.html">Início</a>
+    <a href="categorias/combos-de-whisky.html">Combo de Whisky</a>
+    <a href="categorias/combo-whisky-menor.html">Combo Whisky Menor</a>
+    <a href="categorias/combos-de-gin.html">Combo de Gin</a>
+    <a href="categorias/garrafas.html">Garrafas</a>
+    <a href="categorias/cervejas.html">Cervejas</a>
+    <a href="categorias/refrigerantes.html">Refrigerantes</a>
+    <a href="categorias/diversos.html">Diversos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</header>
+
+<!-- CONTEÚDO SOBRE -->
+<main class="py-16 px-4 md:px-10 lg:px-24 bg-[#f9f9f9]">
+  <h1 class="titulo-pagina">Nossa História em Imagens</h1>
+
+  <!-- BLOCO 1 - Fachada -->
+  <div class="bloco-sobre">
+    <img src="../images/sobre/fachada.png" alt="Fachada da loja Jefin Destilados">
+    <div class="bloco-texto">
+      <h2>Bem-vindo à Jefin Destilados</h2>
+      <p>
+        Tudo começa aqui, na nossa fachada. Um convite para quem busca qualidade, bom atendimento e as melhores bebidas de Santa Luzia. Nossa presença física reforça o compromisso com nossos clientes: somos reais, próximos e acessíveis.
+      </p>
+    </div>
+  </div>
+
+  <!-- BLOCO 2 - Interior -->
+  <div class="bloco-sobre invertido">
+    <img src="../images/sobre/interior.png" alt="Interior da loja Jefin Destilados">
+    <div class="bloco-texto">
+      <h2>Ambiente acolhedor e organizado</h2>
+      <p>
+        Dentro da loja, cuidamos para que tudo esteja à altura da experiência que você merece. Prateleiras bem organizadas, produtos à vista e um clima de confiança que faz você se sentir em casa ao escolher o que vai levar.
+      </p>
+    </div>
+  </div>
+
+  <!-- BLOCO 3 - Produtos -->
+  <div class="bloco-sobre">
+    <img src="../images/sobre/produtos.png" alt="Produtos organizados na loja">
+    <div class="bloco-texto">
+      <h2>Uma seleção feita com critério</h2>
+      <p>
+        Nossa variedade de produtos é pensada para surpreender. Trabalhamos com os rótulos mais desejados do mercado, além de combos e ofertas especiais que cabem no seu bolso — sem abrir mão da qualidade.
+      </p>
+    </div>
+  </div>
+
+  <!-- BLOCO 4 - Equipe -->
+  <div class="bloco-sobre invertido">
+    <img src="../images/sobre/equipe.png" alt="Equipe da loja Jefin Destilados">
+    <div class="bloco-texto">
+      <h2>Atendimento que faz a diferença</h2>
+      <p>
+        Mais do que vender, gostamos de atender. O Jefin e sua equipe estão sempre prontos para te ajudar, seja no balcão, pelo WhatsApp ou no Instagram. Cada cliente é tratado com atenção e respeito — como parte da nossa história.
+      </p>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="sobre.html">Sobre a Loja</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <p>Site criado por Lucas de Oliveira - WhatsApp: (31) 98467-7689</p>
+  <p>&copy; 2025 Jefin Destilados - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

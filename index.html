@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jefin Destilados | Santa Luzia - MG</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER INÍCIO -->
+<header class="header">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="images/logo/logo-jefin.png" alt="Jefin Destilados" class="logo-img">
+    </a>
+
+    <!-- Menu Desktop -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Categorias</a>
+          <ul class="dropdown-menu">
+            <li><a href="pages/categorias/combos-de-whisky.html">Combo de Whisky</a></li>
+            <li><a href="pages/categorias/combo-whisky-menor.html">Combo Whisky Menor</a></li>
+            <li><a href="pages/categorias/combos-de-gin.html">Combo de Gin</a></li>
+            <li><a href="pages/categorias/garrafas.html">Garrafas</a></li>
+            <li><a href="pages/categorias/cervejas.html">Cervejas</a></li>
+            <li><a href="pages/categorias/refrigerantes.html">Refrigerantes</a></li>
+            <li><a href="pages/categorias/diversos.html">Diversos</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/ofertas.html">Ofertas</a></li>
+        <li><a href="pages/eventos.html">Eventos</a></li>
+        <li><a href="pages/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Pesquisa e Carrinho -->
+    <div class="search-cart" style="position: relative;">
+  <input type="text" id="search" placeholder="🔍 Buscar produto..." style="padding-left: 30px;">
+  <a href="pages/carrinho.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+</div>
+
+    <!-- Botão Mobile -->
+    <button class="btn-menu" onclick="toggleMenu()" aria-label="Abrir menu mobile">☰</button>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div class="menu-mobile" id="mobileMenu">
+    <a href="index.html">Início</a>
+    <a href="pages/categorias/combos-de-whisky.html">Combo de Whisky</a>
+    <a href="pages/categorias/combo-whisky-menor.html">Combo Whisky Menor</a>
+    <a href="pages/categorias/combos-de-gin.html">Combo de Gin</a>
+    <a href="pages/categorias/garrafas.html">Garrafas</a>
+    <a href="pages/categorias/cervejas.html">Cervejas</a>
+    <a href="pages/categorias/refrigerantes.html">Refrigerantes</a>
+    <a href="pages/categorias/diversos.html">Diversos</a>
+    <a href="pages/ofertas.html">Ofertas</a>
+    <a href="pages/eventos.html">Eventos</a>
+    <a href="pages/contato.html">Contato</a>
+  </div>
+</header>
+<!-- HEADER FIM -->
+
+
+
+ <!-- INÍCIO DO BANNER ROTATIVO -->
+<div class="banner-container">
+  <div class="banner-carousel" id="banner-carousel">
+    <div class="carousel-slide">
+      <img src="images/banner/modelo-principal.png" alt="Banner Principal">
+    </div>
+    <div class="carousel-slide">
+      <img src="images/banner/banner2-frete.png" alt="Banner Frete">
+    </div>
+    <div class="carousel-slide">
+      <img src="images/banner/banner3-promocoes.png" alt="Banner Promoções">
+    </div>
+  </div>
+</div>
+<div class="banner-dots" id="banner-dots"></div>
+<!-- FIM DO BANNER ROTATIVO -->
+
+
+  <!-- CATEGORIAS -->
+  <section class="categorias">
+  <h2>Escolha por categoria</h2>
+  <div class="categorias-grid">
+    <a href="pages/categorias/combos-de-whisky.html" class="categoria-item">
+      <img src="images/produtos/combos-de-whisky/Jack Daniels Mel/JackDaniels_Mel_Combo_1.png" alt="Combo Whisky" />
+      <span>Whisky</span>
+    </a>
+    <a href="pages/categorias/combo-whisky-menor.html" class="categoria-item">
+      <img src="images/produtos/combo-whisky-menor/black-jocker-menor-4gelin/BlackJoker_ComboMenor_1.png" alt="Whisky Menor" />
+      <span>Whisky Menor</span>
+    </a>
+    <a href="pages/categorias/combos-de-gin.html" class="categoria-item">
+      <img src="images/produtos/combos-de-gin/Gin Beefeater London/Beefeater_Combo_1.png" alt="Combo Gin" />
+      <span>Gin</span>
+    </a>
+    <a href="pages/categorias/garrafas.html" class="categoria-item">
+      <img src="images/produtos/garrafas/Tanqueray_1L.png" alt="Garrafas" />
+      <span>Garrafas</span>
+    </a>
+    <a href="pages/categorias/cervejas.html" class="categoria-item">
+      <img src="images/produtos/cervejas/Heineken_600ml.png" alt="Cervejas" />
+      <span>Cervejas</span>
+    </a>
+    <a href="pages/categorias/refrigerantes.html" class="categoria-item">
+      <img src="images/produtos/refrigerantes/CocaCola_2L.png" alt="Refrigerantes" />
+      <span>Refrigerantes</span>
+    </a>
+    <a href="pages/categorias/diversos.html" class="categoria-item">
+      <img src="images/produtos/diversos/RedBull.png" alt="Diversos" />
+      <span>Diversos</span>
+    </a>
+  </div>
+</section>
+
+  <!-- INÍCIO CARROSSEIS DE PRODUTOS -->
+<section class="carrossel-section">
+  <h2 class="carrossel-titulo">🔥 Destaques da Semana</h2>
+  <div class="carrossel-wrapper">
+    <button class="btn-carrossel prev" data-target="destaques">‹</button>
+    <div class="carrossel" id="carrossel-destaques"></div>
+    <button class="btn-carrossel next" data-target="destaques">›</button>
+    <div class="carrossel-dots" id="dots-destaques"></div>
+  </div>
+</section>
+
+<section class="carrossel-section">
+  <h2 class="carrossel-titulo">⚡ Promoções Relâmpago</h2>
+  <div class="carrossel-wrapper">
+    <button class="btn-carrossel prev" data-target="promocoes">‹</button>
+    <div class="carrossel" id="carrossel-promocoes"></div>
+    <button class="btn-carrossel next" data-target="promocoes">›</button>
+    <div class="carrossel-dots" id="dots-promocoes"></div>
+  </div>
+</section>
+
+<section class="carrossel-section">
+  <h2 class="carrossel-titulo">🎉 Top do Fim de Semana</h2>
+  <div class="carrossel-wrapper">
+    <button class="btn-carrossel prev" data-target="tops">‹</button>
+    <div class="carrossel" id="carrossel-tops"></div>
+    <button class="btn-carrossel next" data-target="tops">›</button>
+    <div class="carrossel-dots" id="dots-tops"></div>
+  </div>
+</section>
+<!-- FIM CARROSSEIS DE PRODUTOS -->
+ 
+
+  <p id="aviso-nenhum" style="display:none; text-align: center; font-size: 18px; color: #D32F2F; margin-top: 30px;">
+    ❌ Nenhum produto encontrado com esse nome.
+  </p>
+</section>
+
+
+
+<!-- SEÇÃO: EVENTO DA SEMANA - HOME -->
+<section class="evento-semana">
+  <div class="evento-semana-container">
+    <img src="images/eventos/evento-jefin-junho.png" alt="Pagode da Adega - Evento" class="evento-semana-img">
+    <div class="evento-semana-info">
+      <h2>📣 Evento da Semana</h2>
+      <h3>Pagode da Adega</h3>
+      <p>Prepare-se para o pagode mais animado de Santa Luzia com bebidas geladas direto do Jefin Destilados!</p>
+      <a href="pages/eventos.html" class="evento-semana-btn">📆 Ver detalhes do evento</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO: INSTAGRAM - VITRINE PREMIUM -->
+<section class="instagram-vitrine">
+  <div class="instagram-vitrine-container">
+    <div class="instagram-vitrine-texto">
+      <h2 class="titulo-secundario">
+        📸 Acompanhe o <span class="insta-destaque">Jefin Destilados</span> no Instagram
+      </h2>
+      <p>Siga nosso perfil oficial para bastidores, promoções e os melhores momentos da adega mais famosa de Santa Luzia!</p>
+      <a href="https://www.instagram.com/jefin_destilados/" target="_blank" class="btn-instagram-vitrine">
+        🔗 Ver perfil @jefin_destilados
+      </a>
+    </div>
+    <div class="instagram-vitrine-img">
+      <img src="images/redes/jefindestilados-instagram.png" alt="Instagram Jefin Destilados">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- SEÇÃO: CRIADOR DO SITE - PREMIUM -->
+<section class="criador-site">
+  <div class="criador-container">
+    <div class="criador-texto">
+      <h3>💻 Site criado com qualidade profissional</h3>
+      <p>Este site foi desenvolvido por <strong>Lucas de Oliveira</strong>. Quer um site de impacto para o seu negócio?</p>
+      <a href="https://wa.me/5531984677689?text=Olá!%20Acabei%20de%20visitar%20o%20site%20da%20Jefin%20Destilados%20e%20gostaria%20de%20falar%20com%20o%20criador%20sobre%20criação%20de%20sites." target="_blank" class="btn-criador">✔️ Fale comigo no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="pages/politica.html">Política de Privacidade</a>
+      <a href="pages/termos.html">Termos de Uso</a>
+      <a href="pages/sobre.html">Sobre a Loja</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <p>Site criado por Lucas de Oliveira - WhatsApp: (31) 98467-7689</p>
+    <p>&copy; 2025 Jefin Destilados - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

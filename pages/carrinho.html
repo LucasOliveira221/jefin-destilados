@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho | Jefin Destilados</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+  <style>
+    .item-info p {
+      margin: 6px 0;
+    }
+
+    .item-info p.descricao-produto {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .item-info p.preco-produto {
+      font-weight: bold;
+      color: #ECC440;
+      font-size: 16px;
+    }
+
+    .item-info p.subtotal {
+      font-size: 17px;
+      font-weight: bold;
+      color: #D32F2F;
+    }
+
+    .carrinho-total p {
+      font-size: 21px;
+      font-weight: bold;
+      color: #020202;
+      margin-bottom: 10px;
+    }
+
+    #total {
+      font-size: 24px;
+      color: #D32F2F;
+    }
+
+    .btn-finalizar {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #ECC440;
+      color: #000;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-finalizar:hover {
+      background-color: #d4ad2c;
+    }
+
+  .btn-esvaziar {
+  display: inline-block;
+  margin-left: 12px;
+  background-color: #f3f3f3;
+  color: #0d3604;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid #ccf1bb;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-esvaziar:hover {
+  background-color: #e6f8de;
+  color: #2fd337;
+}
+
+@media (max-width: 768px) {
+  .carrinho-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-finalizar,
+  .btn-esvaziar {
+    margin: 8px 0;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .btn-esvaziar {
+    margin-top: 4px;
+  }
+}
+
+  </style>
+</head>
+<body class="pagina-carrinho">
+
+<!-- HEADER PADRÃO -->
+<header class="header">
+  <div class="header-container">
+    <a href="../index.html">
+      <img src="../images/logo/logo-jefin.png" alt="Jefin Destilados" class="logo-img">
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Categorias</a>
+          <ul class="dropdown-menu">
+            <li><a href="categorias/combos-de-whisky.html">Combo de Whisky</a></li>
+            <li><a href="categorias/combo-whisky-menor.html">Combo Whisky Menor</a></li>
+            <li><a href="categorias/combos-de-gin.html">Combo de Gin</a></li>
+            <li><a href="categorias/garrafas.html">Garrafas</a></li>
+            <li><a href="categorias/cervejas.html">Cervejas</a></li>
+            <li><a href="categorias/refrigerantes.html">Refrigerantes</a></li>
+            <li><a href="categorias/diversos.html">Diversos</a></li>
+          </ul>
+        </li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" id="search" placeholder="Buscar...">
+      <a href="carrinho.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+    </div>
+    <button class="btn-menu" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- CONTEÚDO -->
+<main class="carrinho">
+  <h1 class="titulo-pagina">🛒 Carrinho de Compras</h1>
+
+  <div id="carrinho-lista" class="lista-carrinho">
+    <!-- Produtos renderizados via JS -->
+  </div>
+
+  <div class="carrinho-total">
+    <p>Total: <span id="total">R$ 0,00</span></p>
+    <a href="#" id="btn-finalizar" class="btn-finalizar">🛒 Finalizar Compra</a>
+    <a href="#" id="btn-esvaziar" class="btn-esvaziar">🧹 Esvaziar Carrinho</a>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="sobre.html">Sobre a Loja</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <p>Site criado por Lucas de Oliveira - WhatsApp: (31) 98467-7689</p>
+  <p>&copy; 2025 Jefin Destilados - Todos os direitos reservados</p>
+</footer>
