@@ -18,28 +18,28 @@ if (slides.length > 0) {
 // Lista completa de produtos da loja Jefin Destilados (com caminhos corrigidos)
 const products = [
   // Combos de Whisky
-  { nome: "Combo Jack Daniel's Maçã Verde 1L", preco: "R$ 139,99", imagem: "images/produtos/combos-de-whisky/JACK MACA VERDE/JackDaniels_MacaVerde_Combo_1.png" },
-  { nome: "Combo Jack Daniel's Mel 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/Jack Daniels Mel/JackDaniels_Mel_Combo_1.png" },
-  { nome: "Combo Johnnie Walker Red Label 1L", preco: "R$ 109,98", imagem: "images/produtos/combos-de-whisky/Red Label/RedLabel_Combo_1.png" },
-  { nome: "Combo White Horse 1L", preco: "R$ 99,98", imagem: "images/produtos/combos-de-whisky/Cavalinho branco WHITE HOUSE/WhiteHorse_Combo_1.png" },
-  { nome: "Combo Jack Daniel's Original 1L", preco: "R$ 119,90", imagem: "images/produtos/combos-de-whisky/JACK DANIELS ORIGINAL/JackDaniels_Combo_1.png" },
-  { nome: "Combo Jack Daniel's Canela 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/Jack Daniels Canela/JackDaniels_Canela_Combo_1.png" },
-  { nome: "Combo Johnnie Walker Gold Label 1L", preco: "R$ 209,98", imagem: "images/produtos/combos-de-whisky/Gold Label/GoldLabel_Combo_1.png" },
-  { nome: "Combo Ballantine's Finest 1L", preco: "R$ 109,98", imagem: "images/produtos/combos-de-whisky/Ballantines/Ballantines_Combo_1.png" },
-  { nome: "Combo Ballantine's 12 Anos 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/Ballantines 12 Anos/Ballantines_12Anos_Combo_1.png" },
-  { nome: "Combo Chivas Regal 12 Anos 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/Chivas/Chivas_Combo_1.png" },
-  { nome: "Combo Johnnie Walker Black Label 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/Black Label/BlackLabel_Combo_1.png" },
-  { nome: "Combo Buchanan's Deluxe 12 Anos 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/Whisky Buchanans 1L/Buchanans_Combo_1.png" },
+  { nome: "Combo Jack Daniel's Maçã Verde 1L", preco: "R$ 139,99", imagem: "images/produtos/combos-de-whisky/JACK-MACA-VERDE/JackDaniels_MacaVerde_Combo_1.png" },
+  { nome: "Combo Jack Daniel's Mel 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/JACK-DANIELS-MEL/JackDaniels_Mel_Combo_1.png" },
+  { nome: "Combo Johnnie Walker Red Label 1L", preco: "R$ 109,98", imagem: "images/produtos/combos-de-whisky/RED-LABEL/RedLabel_Combo_1.png" },
+  { nome: "Combo White Horse 1L", preco: "R$ 99,98", imagem: "images/produtos/combos-de-whisky/WHITE-HORSE/WhiteHorse_Combo_1.png" },
+  { nome: "Combo Jack Daniel's Original 1L", preco: "R$ 119,90", imagem: "images/produtos/combos-de-whisky/JACK-DANIELS-ORIGINAL/JackDaniels_Combo_1.png" },
+  { nome: "Combo Jack Daniel's Canela 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/JACK-DANIELS-CANELA/JackDaniels_Canela_Combo_1.png" },
+  { nome: "Combo Johnnie Walker Gold Label 1L", preco: "R$ 209,98", imagem: "images/produtos/combos-de-whisky/GOLD-LABEL/GoldLabel_Combo_1.png" },
+  { nome: "Combo Ballantine's Finest 1L", preco: "R$ 109,98", imagem: "images/produtos/combos-de-whisky/BALLANTINES/Ballantines_Combo_1.png" },
+  { nome: "Combo Ballantine's 12 Anos 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/BALLANTINES-12-ANOS/Ballantines_12Anos_Combo_1.png" },
+  { nome: "Combo Chivas Regal 12 Anos 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/CHIVAS/Chivas_Combo_1.png" },
+  { nome: "Combo Johnnie Walker Black Label 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/BLACK-LABEL/BlackLabel_Combo_1.png" },
+  { nome: "Combo Buchanan's Deluxe 12 Anos 1L", preco: "R$ 129,99", imagem: "images/produtos/combos-de-whisky/BUCHANANS/Buchanans_Combo_1.png" },
 
   // Combo Whisky Menor
-  { nome: "Combo Black Joker 900ml", preco: "R$ 49,99", imagem: "images/produtos/combo-whisky-menor/black-jocker-menor-4gelin/BlackJoker_ComboMenor_1.png" },
+  { nome: "Combo Black Joker 900ml", preco: "R$ 49,99", imagem: "images/produtos/combo-whisky-menor/BLACK-JOKER/BlackJoker_ComboMenor_1.png" },
 
   // Combos de Gin
-  { nome: "Combo Tanqueray London Dry 750ml", preco: "R$ 129,99", imagem: "images/produtos/combos-de-gin/Gin Tanqueray/Tanqueray_Combo_1.png" },
-  { nome: "Combo Beefeater London Dry 750ml", preco: "R$ 109,98", imagem: "images/produtos/combos-de-gin/Gin Beefeater London/Beefeater_Combo_1.png" },
-  { nome: "Combo Intencion Gin 1L", preco: "R$ 69,99", imagem: "images/produtos/combos-de-gin/Gin Intencion/GinIntencion_Combo_1.png" },
-  { nome: "Combo Gordon's London Dry 750ml", preco: "R$ 123,50", imagem: "images/produtos/combos-de-gin/Gin Gordons Tradicional/Gordons_Combo_1.png" },
-  { nome: "Combo Rock's Gin 1L", preco: "R$ 86,50", imagem: "images/produtos/combos-de-gin/Gin Rocks/Rocks_Combo_1.png" },
+  { nome: "Combo Tanqueray London Dry 750ml", preco: "R$ 129,99", imagem: "images/produtos/combos-de-gin/TANQUERAY/Tanqueray_Combo_1.png" },
+  { nome: "Combo Beefeater London Dry 750ml", preco: "R$ 109,98", imagem: "images/produtos/combos-de-gin/BEEFEATER/Beefeater_Combo_1.png" },
+  { nome: "Combo Intencion Gin 1L", preco: "R$ 69,99", imagem: "images/produtos/combos-de-gin/INTENCION/GinIntencion_Combo_1.png" },
+  { nome: "Combo Gordon's London Dry 750ml", preco: "R$ 123,50", imagem: "images/produtos/combos-de-gin/GORDONS/Gordons_Combo_1.png" },
+  { nome: "Combo Rock's Gin 1L", preco: "R$ 86,50", imagem: "images/produtos/combos-de-gin/ROCKS/Rocks_Combo_1.png" },
 
   // Garrafas
   { nome: "Tanqueray London Dry 1L", preco: "R$ 79,99", imagem: "images/produtos/garrafas/Tanqueray_1L.png" },
@@ -157,7 +157,7 @@ function comprarAgora(nome, preco, imagem) {
   cart = [{ nome, preco, imagem, qtd: 1 }];
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
-  window.location.href = "pages/carrinho.html";
+  window.location.href = "/pages/carrinho.html";
 }
 
 
@@ -295,15 +295,13 @@ if (btnEsvaziar) {
 }
 
 
-// ===============================
 // SCRIPT DA PÁGINA DO PRODUTO
 // ===============================
-
 if (window.location.pathname.includes("produto.html")) {
   const urlParams = new URLSearchParams(window.location.search);
   const nomeProduto = urlParams.get("id");
 
-  const produto = products.find(p => p.nome === nomeProduto);
+  const produto = products.find(p => p.nome === decodeURIComponent(nomeProduto));
 
   if (produto) {
     const nomeElem = document.getElementById("produto-nome");
@@ -320,7 +318,7 @@ if (window.location.pathname.includes("produto.html")) {
     descElem.textContent = gerarDescricao(produto.nome);
 
     // Imagem principal
-    galeriaElem.src = produto.imagem;
+    galeriaElem.src = "/" + produto.imagem; // Caminho absoluto
     galeriaElem.alt = produto.nome;
 
     // Miniaturas
@@ -328,7 +326,7 @@ if (window.location.pathname.includes("produto.html")) {
     const basePath = produto.imagem.substring(0, produto.imagem.lastIndexOf("_") + 1);
     for (let i = 1; i <= 4; i++) {
       const thumb = document.createElement("img");
-      thumb.src = `${basePath}${i}.png`;
+      thumb.src = `/${basePath}${i}.png`; // Caminho absoluto
       thumb.alt = `Imagem ${i}`;
       thumb.onerror = () => thumb.style.display = "none";
       thumb.addEventListener("click", () => {
@@ -348,15 +346,14 @@ if (window.location.pathname.includes("produto.html")) {
       const div = document.createElement("div");
       div.className = "produto";
       div.innerHTML = `
-        <a href="produto.html?id=${encodeURIComponent(p.nome)}">
-          <img src="${p.imagem}" alt="${p.nome}">
+        <a href="/pages/produto.html?id=${encodeURIComponent(p.nome)}"> <!-- Caminho absoluto -->
+          <img src="/${p.imagem}" alt="${p.nome}">
           <h3>${p.nome}</h3>
           <p>${p.preco}</p>
         </a>
       `;
       relacionadosElem.appendChild(div);
     });
-
   } else {
     document.querySelector("main").innerHTML = "<p>Produto não encontrado.</p>";
   }
